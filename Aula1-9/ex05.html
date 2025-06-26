@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background: pink;
+            color: white;
+            font: normal 10pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinar com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprender a usar <strong>DOM</strong> em JavaScript</p>
+    <div id= "msg">Clica aqui!</div>
+    <br>
+    <br>
+    <script>
+        var p1 = window.document.getElementsByTagName('p') [1]
+        var div1 = window.document.getElementById('msg')         
+         msg.style.background = 'purple'
+         p1.style.color = 'purple'
+
+         document.write('O que está dentro do primeiro paragrafo é: ' + p1.innerText + '<br>')
+         
+         document.write('O que está escrito e configurado em p1 é: ' + p1.innerHTML + '<br>')
+
+         window.document.write('Olá Mundo!<br><br>')
+
+         /* document.write('Alguma configurações: <br>')
+         window.document.write(window.document.charset + '<br>')
+         window.document.write(window.navigator.appName + '<br>')
+         window.document.write('O URL da pagina é: ' + window.document.URL)
+         */
+    </script>
+</body>
+</html>

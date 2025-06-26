@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Nacionalidade: <input type="text" name="nation" id="nation">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar() {
+            var n = document.getElementById('nation')
+            var res = document.getElementById('res')
+            if (n.value != 'Portugal') {
+                res.innerHTML = `<p>Cidadão Estrangeiro</p>`
+            }
+            else {
+                res.innerHTML = `<p>Cidadão Portugues</p>`
+            }
+        }
+        
+    </script>
+</body>
+</html>
