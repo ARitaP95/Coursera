@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>             <!-- onload é para carregar a função do JS funcional no documento HTML-->
+    <header>
+        <h1>
+            Tabuada
+        </h1>
+    </header>
+    <section>
+        <div id="msg">
+            <p>Número: <input type="number" name="multiplo" id="num">
+            <input type="button" value="Mostrar Tabuada" onclick="tabuada()"></p>
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digita um numero</option>
+                <!-- <option value="v1">Valor 1</option>
+                <option value="v2">Valor 2</option>
+                Queremos criar estes options de forma dinamica
+                -->
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Ana Pereira</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
